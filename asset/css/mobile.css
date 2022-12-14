@@ -176,6 +176,8 @@
         padding: 5px;
         font-size: 15pt;
         color: blueviolet;
+        display: block;
+        width: 80px;
     }
     .select-2 select{
         width: 20vw;
