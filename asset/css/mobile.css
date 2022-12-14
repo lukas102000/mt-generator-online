@@ -53,11 +53,12 @@
     }
     .mobile li a{
         color: rgb(255, 255, 255);
-        padding: 5px;
         margin: 5px;
+        font-size: 12pt;
         font-family:Arial, Helvetica, sans-serif;
     }
     #subscreve{
+        font-size: 12pt;
         background-color: rgb(255, 255, 255);
         color: rgb(211, 0, 253);
         border-radius: 5px;
@@ -153,7 +154,7 @@
     }
     .select-1 strong{
         padding: 5px;
-        font-size: 15pt;
+        font-size: 12pt;
         color: blueviolet;
     }
     .select-1 select{
@@ -174,7 +175,7 @@
     }
     .select-2 strong{
         padding: 5px;
-        font-size: 15pt;
+        font-size: 12pt;
         color: blueviolet;
  
     }
@@ -223,17 +224,21 @@
         border-radius: 10px;
     }
     .outuput-gerador2{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
-    .outuput-gerador2 label{
+
+    .outuput-gerador label{
         display:block;
-        width: 70px;
-        font-size: 12pt;
+        font-size: 11pt;
     }
+ 
     .div-loading{
-        width: 100%;
-        height: 34.5em;
-        background-color: rgb(255, 255, 255);
+        width: 80vw;
+        height:49em;
+        background-color:#ffff;
         border-radius: 10px;
         overflow: hidden;
         display: none;
@@ -275,7 +280,7 @@
         }
     }
     .res-up{
-        width: 100%;
+        width: 80vw;
         height: 3rem;
         display: flex;
         justify-content: center;
@@ -286,11 +291,10 @@
         font-size: 15pt;
     }
     .res-data label{
-        width: max-content;
         margin: 10px;
         padding: 5px;
-        height: 1.5rem;
-        font-size: 13pt;
+        height: 2rem;
+        font-size: 12pt;
         border-radius: 10px;
         text-align: center;
         border: 1px solid blueviolet;
@@ -334,5 +338,23 @@
     }
     p{
         text-align: center;
+    }
+    #vefication{
+        margin: 12px;
+        width: 30px;
+        font-size: 12pt;
+        color: rgb(255, 255, 255);
+    }
+    #vefication2{
+        margin: 12px;
+        width: 30px;
+        font-size: 12pt;
+        color: rgb(255, 255, 255);
+    }
+    #vefication3{
+        margin: 30px;
+        font-size: 12pt;
+        width: 20vw;
+        color: rgb(255, 255, 255);
     }
 }
