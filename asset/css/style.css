@@ -1,0 +1,331 @@
+@media (min-width:60rem) {
+    body{
+        margin: 0;
+        padding: 0;
+    }
+    a, li{
+        list-style: none;
+        text-decoration: none;
+    }
+    .main-header{
+        width: 100%;
+        height: 5rem;
+        background-color: rgba(245, 245, 245, 0.966);
+        border-bottom: 1px solid #ddd;
+        transition-duration: 0.5s;
+        -webkit-transition-duration: 2ms;
+    }
+    .desk-header{
+        width: 100%;
+        height: 5rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .desk-header h1{
+        color: blueviolet;
+        padding: 5px;
+        margin: 5px;
+        font-size: 18pt;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .desk-header li{
+        width: 70vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .desk-header li a{
+        color: black;
+        padding: 5px;
+        margin: 5px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    #subscreve{
+        background-color: rgb(140, 0, 255);
+        color: white;
+        border-radius: 5px;
+    }
+    .main-header nav li a:hover{
+        color: rgb(161, 159, 159);
+        transition: 0.2s;
+    }
+    #subscreve:hover{
+        background-color: rgb(39, 39, 39);
+        transition: 0.2s;
+    }
+    .mobile{
+        display: none;
+    }
+    .slider{
+        width: 100%;
+        height: 40rem;
+        background-color: rgb(140, 0, 255);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        animation: chenge 3s infinite;
+    }
+    .slider h1{
+        margin: 0;
+        padding: 0;
+        color: rgb(255, 255, 255);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .slider small{
+        color: white;
+        font-size: 13pt;
+    }
+    .slider a{
+        width: 20vw;
+        height: 2rem;
+        background-color: white;
+        text-align: center;
+        padding: 5px;
+        font-size: 20pt;
+        border-radius: 10px;
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.199);
+    }
+    .slider a:hover{
+        background-color: rgb(140, 0, 255);
+        color: white;
+        transition: 0.2s;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 55em;
+        background-color: rgb(255, 255, 255);
+    }
+    .sub-container{
+        width: 95%;
+        height: 50em;
+        background-color: rgb(255, 255, 255);
+        margin-top: 5px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .input-gerador{
+        width:70vw;
+        height: max-content;
+        margin: 10px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0.171);
+        border-radius: 10px;
+    }
+    .select-1{
+        width: 40vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 10px;
+        
+    }
+    .select-1 strong{
+        padding: 5px;
+        font-size: 15pt;
+        color: blueviolet;
+    }
+    .select-1 select{
+        padding: 10px;
+        font-size: 12pt;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(221, 220, 221);
+        border-radius: 50px;
+    }
+
+    .select-2{
+        width: 40vw;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 10px;
+        
+    }
+    .select-2 strong{
+        padding: 5px;
+        font-size: 15pt;
+        color: blueviolet;
+    }
+    .select-2 select{
+        padding: 5px;
+        font-size: 12pt;
+        color: rgb(0, 0, 0);
+        border: 1px solid rgb(221, 220, 221);
+        border-radius: 50px;
+    }
+    .select-3{
+        display: none;
+    }
+    .select-3 h1{
+        color: gray;
+    }
+    .input-gerador button{
+        width: 20rem;
+        height: 3.5rem;
+        font-size: 15pt;
+        color: rgb(255, 255, 255);
+        border: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50pt;
+        background-color: blueviolet;
+        margin-bottom: 5px;
+    }
+    .input-gerador button:hover{
+        color: rgb(255, 255, 255);
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    .outuput-gerador{
+        width:70vw;
+        height: 40em;
+        margin: 10px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 2px 2px 4px rgba(0, 0, 0, 0.171);
+        border-radius: 10px;
+    }
+    .div-loading{
+        width: 45vw;
+        height: 40em;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .div-loading .progressbar{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: 10px solid black;
+        border-top-color: rgb(61, 255, 2);
+        border-bottom-color: rgb(43, 255, 0);
+        animation: spiner 0.3s infinite;
+    }
+    .load2{
+        width: 6rem;
+        height: 3rem;
+        border-radius: 10px;
+        overflow: hidden;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+    .load2 div{
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        border: 10px solid black;
+        border-top-color: rgb(61, 255, 2);
+        border-bottom-color: rgb(43, 255, 0);
+        animation: spiner 0.3s infinite;
+    }
+    @keyframes spiner {
+        98%{
+            transform: rotate(980deg);
+        }
+    }
+    .outuput-gerador2{
+        display: block;
+    }
+
+    .res-up{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px 10px 0px 0px ;
+        background-color: blueviolet;
+        color: white;
+        font-size: 15pt;
+    }
+    .res-data label{
+        width: max-content;
+        margin: 10px;
+        padding: 5px;
+        height: 1.5rem;
+        font-size: 13pt;
+        border-radius: 10px;
+        text-align: center;
+        border: 1px solid blueviolet;
+    }
+    .res-data button{
+        width: 10rem;
+        height: 3rem;
+        margin: 15px;
+        font-size: 12pt;
+        color: rgb(255, 255, 255);
+        border: 0;
+        border-radius: 50pt;
+        background-color: blueviolet;
+    }
+    .res-data button:hover{
+        color: rgb(255, 255, 255);
+        transition: 0.5s;
+        background-color: rgb(0, 0, 0);
+        cursor: pointer;
+    }
+    .ideai{
+        width: 92%;
+        height: 20em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(111, 7, 209);
+        flex-direction: column;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        animation: chenge 3s infinite;
+    }
+    .ideai p{
+        width:100%;
+    }
+    @keyframes chenge {
+        50%{
+            background-color: rgb(152, 42, 255);
+        }
+        100%{
+            background-color: rgb(69, 0, 134);
+        }
+    }
+}
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: rgb(50, 3, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 10pt;
+    text-align: center;
+}
+#vefication{
+    margin: 12px;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+}
+#vefication2{
+    margin: 12px;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+}
+#vefication3{
+    margin: 12px;
+    font-size: 12pt;
+    color: rgb(255, 255, 255);
+}

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MT-GERADOR-ONLINE</title>
+    <link rel="shortcut icon" href="./asset/image/easyCode-fav-ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./asset/css/mobile.css">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="./vendor/jquery/jquery-3.6.1.min.js"></script>
+
+    
+</head>
+
+<body>
+    <header class="main-header">
+        <nav class="desk-header">
+            <h1>MT GERADOR ONLINE</h1>
+            <li>
+                <strong>
+                    <a href="">CASA</a>
+                    <a href="#gerer">Gerador</a>
+                    <a href="" id="subscreve">SUBSCREVER</a>
+                </strong>
+            </li>
+        </nav>
+        <nav class="mobile">
+            <li>
+                <strong>
+                    <a href="">CASA</a>
+                    <a href="#gerer">Gerador</a>
+                    <a href="" id="subscreve">SUBSCREVER</a>
+                </strong>
+            </li>
+        </nav>
+    </header>
+        <div class="slider">
+            <br><br>
+        <h1>GERADOR DE CARTÕES GRÉDITOS</h1><br><br><br>
+        <small>Gere o seu cartão grátis sem criar nenhuma conta bancaria, com detalhes: <strong>VALIDAÇÃO</strong>, <strong>NÚMERO</strong>,<strong>PIN</strong> e código<strong> CCV</strong></small>
+        <br><br><br><br>
+
+        <a href="#gerer">Começa a gerar</a>
+    </div><br><br><br><br><br><br><br><br><br>
+    <section class="container" id="gerer">
+        <section class="sub-container">
+            <br><br><br>
+            <div class="input-gerador" >
+                <br><br><br>
+                <div class="select-1">
+                    <strong>Marca</strong> <strong>País</strong>
+                    <select name="" id="select-1" onchange="verificate()">
+                        <option value="">Escolher...</option>
+                        <option value="MULTICAIXA">MULTICAIXA</option>
+                        <option value="VISA">VISA</option>
+                        <option value="MASTER CARD">MASTER CARD</option>
+                        <option value="WISE">WISE</option>
+                        <option value="AMAZON">AMAZONE</option>
+                        <option value="WESTER ÚNIO">WESTER ÚNIO</option>
+                    </select>
+                    <select name="" id="select-pais" onchange="verificate()">
+                        <option value="">Escolher...</option>
+                        <option value="ANGOLA">ANGOLA</option>
+                        <option value="ALGERIA">ALGERIA</option>
+                        <option value="ÁFRICA DO SUL">ÁFRICA DO SUL</option>
+                        <option value="NIGÉRIA">NIGÉRIA</option>
+                        <option value="GHANA">GHANA</option>
+                        <option value="RDCONGO">RDCONGO</option>
+                        <option value="RDCONGO BRAZAVILL">RDCONGO BRAZAVILL</option>
+                        <option value="CABO VERDE">CABO VERDE</option>
+                        <option value="MOÇAMBIQUE">MOÇAMBIQUE</option>
+                        <option value="GUINÉ">GUINÉ</option>
+                        <option value="GUINÉ BISAU">GUINÉ BISAU</option>
+                        <option value="GUINÉ EQUATORIAL">GUINÉ EQUATORIAL</option>
+                        <option value="BURINDI">BURINDI</option>
+                        <option value="SANTO E PRÍNCIPE">SANTO E PRÍNCIPE</option>
+                        <option value="TUNISIA">TUNISIA</option>
+                        <option value="COSTA DE MARFIN">COSTA DE MARFIN</option>
+                        <option value="SENEGAL">SENEGAL</option>
+                    </select>
+                    <small id="vefication">cartão disponível</small>
+                    <small id="vefication2">cartão disponível</small>
+                </div><br><br>
+                <div class="select-1">
+                    <strong>Banco</strong><br>
+                    <select name="" id="selectBanco" onchange="verificate()">
+                        <option value="">Escolher...</option><br>
+                        <option value="BAI">BAI</option>
+                        <option value="BFA">BFA</option>
+                        <option value="BCA">BCA</option>
+                        <option value="BPC">BPC</option>
+                        <option value="MILENIUM">ATLANTICO MILENIUM</option>
+                        <option value="SOL">SOL</option>
+                    </select><br>
+                    <small id="vefication3">cartão disponível</small>
+                </div><br><br><br>
+                <div class="select-2">
+                    <strong>Cvv</strong> <strong>Pin</strong> <strong>Data</strong>
+                    <select name="" id="">
+                        <option value="Cartão Crédito">ALEATÓRIO</option><br>
+                    </select>
+                    <select name="" id="">
+                        <option value="Cartão Crédito">ALEATÓRIO</option><br>
+                    </select>
+                    <select name="" id="">
+                        <option value="Cartão Crédito">ALEATÓRIO</option><br>
+                    </select>
+                    <strong>Dinheiro</strong> <strong>Qualidades</strong> <strong>Formato</strong>
+                    <select name="" id="">
+                        <option value="Cartão Crédito">NENHUM</option><br>
+                    </select>
+                    <select name="" id="">
+                        <option value="Cartão Crédito">5</option>
+                        <option value="Cartão Crédito">10</option>
+                    </select>
+                    <select name="" id="">
+                        <option value="Cartão Crédito">PADRÃO</option>
+                    </select>
+                </div><br><br>
+                <a href="#saida">
+                    <button onclick="gerador();">
+                        <div class="load2">
+                            <div class="prog" ></div>
+                        </div>
+                        Iniciar o Gerador
+                    </button>
+                </a>
+                <div class="select-3">
+                    <h1>Não disponível no momento</h1>
+                </div>
+            </div>
+            <div class="outuput-gerador" id="saida">
+                <div class="div-loading">
+                    <div class="progressbar"></div><br><br>
+                    <small>Aguarde...</small>
+                </div>
+                <div class="outuput-gerador2">
+                    <div class="res-up">
+                        <strong>Saída</strong>
+                    </div><br><br><br>
+                    <div class="res-data">
+                        <strong style="margin:10px ;">Banco</strong>
+                        <label id="idbanco">Banco Saída</label><br><br>
+                        <strong style="margin:10px ;">Tipo de cartão</strong>
+                        <label id="tcartao">Tipo de cartão</label><br><br>
+                        <strong style="margin:10px ;">País</strong>
+                        <label id="paises">País Saída</label><br><br><br><br>
+                        
+                        <strong style="margin:10px ;">Número gerado</strong>
+                        <label id="numerog">Número gerado Saída</label><br><br>
+                        <strong style="margin:10px ;">Pin gerado</strong>
+                        <label id="ping">Pin gerado Saída</label><br><br>
+                        <strong style="margin:10px ;">Cvv gerado</strong>
+                        <label id="cvvg">Cvv gerado Saída</label><br><br>
+                        <strong style="margin:10px ;">Data de validação</strong>
+                        <label id="datag">Data de validação</label><br><br>
+    
+                        <br><br><br><br>
+                        <br>
+                        <a href=""><button>Copiar o cartão</button></a> 
+                        <a href=""><button>Salvar o cartão</button></a>
+                    </div>
+                </div>
+            </div>
+        </section><br><br><br>
+        <section class="ideai">
+            <h3>
+                MT MT-GERADOR-ONLINE
+            </h3>
+            <p>
+                Oque é um gerador MT? MT GERADOR DE CARTÕES <br>
+                é um site de gereações, na qual serve para gerar cartões, número de celulares válido <br>
+                de diferentes países Africanos... <br><br>
+
+                <a href="" style="padding:10px; color:rgb(255, 255, 255);">
+                    <strong>Veja os cartões disponível e Paíse</strong>
+                </a>
+            </p>
+        </section>
+    </section><br><br><br><br><br><br><br><br><br>
+    
+    <footer>
+        <p>
+            @made 2022 Tamplete <a href="" style="padding:10px; color:rgb(255, 255, 255);">Undefined</a> Company ****** <br>
+            Contact +244 **** *** *** <br> email: ** * ** ** **@***.com <br>
+            follow-me <a style="padding:10px; color:rgb(255, 255, 255);" href="www.facebook.com/lveraz1">faccbook</a>
+            
+        </p>
+    </footer>
+
+    <script src="./asset/js/fadout.js"></script>
+</body>
+</html>
