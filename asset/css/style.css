@@ -316,16 +316,19 @@ footer{
 }
 #vefication{
     margin: 12px;
+    width: 20vw;
     font-size: 12pt;
     color: rgb(255, 255, 255);
 }
 #vefication2{
     margin: 12px;
+    width: 20vw;
     font-size: 12pt;
     color: rgb(255, 255, 255);
 }
 #vefication3{
     margin: 12px;
     font-size: 12pt;
+    width: 20vw;
     color: rgb(255, 255, 255);
 }
